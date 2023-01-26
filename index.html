@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/js-icon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/97b1f5f7ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/script.js"></script>
+    <title>Age Calculator</title>
+  </head>
+  <body>
+    <article class="container">
+      <header class="container-header">
+        <i class="fa-solid fa-calculator container-header__icon"></i>
+        <h1 class="container-header__title">Age Calculator</h1>
+      </header>
+      <form class="container-form" id="form">
+        <fieldset class="container-form__fieldset">
+          <div class="container-form__field">
+            <label for="select-days" class="container-form__label">Date</label>
+            <select class="container-form__select" id="select-days"></select>
+          </div>
+          <div class="container-form__field">
+            <label for="select-months" class="container-form__label"
+              >Month</label
+            >
+            <select
+              class="container-form__select container-form__select--months"
+              id="select-months"
+            >
+              <option value="1" class="container-form__option">January</option>
+              <option value="2" class="container-form__option">February</option>
+              <option value="3" class="container-form__option">March</option>
+              <option value="4" class="container-form__option">April</option>
+              <option value="5" class="container-form__option">May</option>
+              <option value="6" class="container-form__option">June</option>
+              <option value="7" class="container-form__option">July</option>
+              <option value="8" class="container-form__option">August</option>
+              <option value="9" class="container-form__option">
+                September
+              </option>
+              <option value="10" class="container-form__option">October</option>
+              <option value="11" class="container-form__option">
+                November
+              </option>
+              <option value="12" class="container-form__option">
+                December
+              </option>
+            </select>
+          </div>
+          <div class="container-form__field">
+            <label for="select-years" class="container-form__label">Year</label>
+            <select class="container-form__select" id="select-years"></select>
+          </div>
+        </fieldset>
+        <input
+          type="submit"
+          value="SUBMIT"
+          class="container-form__submit"
+          id="submit-button"
+        />
+      </form>
+      <div
+        class="container-result container-result--hidden"
+        id="container-result"
+      >
+        <p class="container-result__message" id="message-paragraph"></p>
+        <button class="container-result__icon-delete" id="delete-button">
+          <i class="fa-solid fa-trash"></i>
+        </button>
+      </div>
+    </article>
+  </body>
+</html>
