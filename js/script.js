@@ -141,3 +141,10 @@ submitButton.addEventListener("click", () => {
 deleteButton.addEventListener("click", () =>
   containerResult.classList.add("container-result--hidden")
 );
+
+// This check is useful for reloading the page when the user exits, and I had to add this part of the code because it generated an error, but now it's fixed
+let isRedirected = sessionStorage.getItem("isRedirected");
+if (!isRedirected) {
+  sessionStorage.setItem("isRedirected", true);
+  location.reload();
+}
