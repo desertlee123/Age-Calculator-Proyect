@@ -1,6 +1,6 @@
 # Calculadora de Edad
 
-![Calculadora de Edad](/assets/images/js-icon.png)
+![Calculadora de Edad](/assets/images/design.png)
 
 ## Hola! 👋
 
