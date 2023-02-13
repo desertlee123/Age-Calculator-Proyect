@@ -173,7 +173,6 @@ body {
   background-color: var(--Icon-Background);
   cursor: pointer;
 }
-
 .container-result__icon-delete:hover {
   background-color: rgba(149, 158, 172, 0.425);
 }
